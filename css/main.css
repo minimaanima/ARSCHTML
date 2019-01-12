@@ -1,0 +1,24 @@
+img {
+    width: 20px;
+    height: 20px;
+}
+
+table#finTable,
+table#finTable td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.modal2 {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+    height: 80%;
+    margin: 30px;
+}

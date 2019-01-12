@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+  <style>
+
+  </style>
+  <title>Binance Triangular Arbitrage Scanner</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" src="css/main.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="jQuery 3.2.1.js"></script>
+  <script src="js/base.js"></script>
+
+</head>
+
+<body>
+  <!-- Modal -->
+  <div id="loadingmodal">
+      <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>Loading.... Please wait !</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="container">
+    <h1>Binance Triangular Arbitrage Scanner</h1>
+    <p>This tool analysis all the coins and Binance exchange and provides the list of available arbitrage trade
+      opportunities</p>
+    <div class="container row col-sm-5">
+      <table class="table table-borderless">
+        <tbody>
+          <tr>
+            <td>
+              <h6>Scan(On/Off):</h6>
+            </td>
+            <td> <input onchange="u4();" class="col-sm-4" type="checkbox" id="par5" data-toggle="modal" data-target="#myModal"></td>
+          </tr>
+          <tr>
+            <td>
+              <h6>Show Only(rows):</h6>
+            </td>
+            <td> <input class="col-sm-4" type="text" id="par1" value="20"></td>
+          </tr>
+          <tr>
+            <td>
+              <h6>Refresh Every(min):</h6>
+            </td>
+            <td> <input class="col-sm-4" onchange="u3();" type="text" id="par2" value="5"></td>
+          </tr>
+          <tr>
+            <td>
+              <h6>Alerts(On/Off):</h6>
+            </td>
+            <td> <input class="col-sm-4" type="checkbox" id="par3" checked></td>
+          </tr>
+          <tr>
+            <td>
+              <h6>Alert above(%):</h6>
+            </td>
+            <td> <input class="col-sm-4" type="text" id="par4" value="0.5"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!---->
+    <div class="container row">
+      <button type="button" class="btn btn-warning float-right" data-toggle="collapse" data-target="#donate">Buy me a
+        cup of coffee</button>
+    </div>
+    <div id="donate" class="collapse">
+      <br>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Note from developer[Karthik]:</h4>
+          <p class="card-text">Thank you for your contribution. Knowing that my efforts have had a positive impact on
+            the community gives me the motivation to make more quality content for free. Cheers!!! </p>
+          <p style="" class="card-text">BTC Address: 35UoAHkqDA493nuFaArFcWNf56ZPUJ8ppd <br /> MEW Address:
+            0xFC5479343d791eca8EEBB01C488e0a5F460f0453</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!---->
+    <div id="tartbit" class=" container row">
+      <table id="finTable" class="table table-bordered table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th>#S.No</th>
+            <th>Sequence</th>
+            <th>Profit%</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--<tr>
+            <td>1</td>
+            <td>ETH -> KEY -> BTC -> ETH </td>
+            <td>1.5%</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>BTC -> NEO -> ETH -> BTC </td>
+            <td>0.3%</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>USDT -> ADA -> BTC -> USDT </td>
+            <td>0.23%</td>
+          </tr>-->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+<script>
+</script>
+
+</html>

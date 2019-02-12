@@ -36,8 +36,6 @@ function scanBinance() {
 }
 
 function identifyArbitrage(data) {
-  document.getElementsByClassName('modal-open')[0].classList.remove('modal-open')
-  document.getElementById('loadingmodal').style.display="none"
   var d1 = JSON.parse(data);
   var gv_sym = [],
     gv_resp = {},
